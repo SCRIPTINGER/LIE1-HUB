@@ -102,12 +102,18 @@ Tab:AddButton({
   	end    
 })
 local Tab = Window:MakeTab({
-	Name = "",
+	Name = "Doors",
 	Icon = "rbxassetid://18994445145",
 	PremiumOnly = false
 })
 local Section = Tab:AddSection({
-	Name = "Admin Commands"
+	Name = "Hubs"
+})
+Tab:AddButton({
+	Name = "T1[First Russian script for doors]",
+	Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/t1hub2/Brub/refs/heads/main/Code%20brub.lua'))()
+  	end    
 })
 local Tab = Window:MakeTab({
 Name = "Settings",
