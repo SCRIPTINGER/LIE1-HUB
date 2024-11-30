@@ -12,6 +12,14 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 local Section = Tab:AddSection({
+	Name = "Information"
+})
+local Tab = Window:MakeTab({
+	Name = "Universal",
+	Icon = "rbxassetid://18994445145",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
 	Name = "Admin Commands"
 })
 Tab:AddButton({
@@ -94,14 +102,6 @@ Tab:AddButton({
 	Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Pixeluted/adoniscries/main/Source.lua", true))()
   	end    
-})
-local Tab = Window:MakeTab({
-	Name = "",
-	Icon = "rbxassetid://18994445145",
-	PremiumOnly = false
-})
-local Section = Tab:AddSection({
-	Name = "Admin Commands"
 })
 local Tab = Window:MakeTab({
 Name = "Settings",
