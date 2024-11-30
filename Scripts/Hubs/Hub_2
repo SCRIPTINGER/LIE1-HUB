@@ -2,11 +2,4 @@
    (Alpha 0.1.0) ~  WHITELIST
 
 ]]--
-local whitelistecheck = loadstring(game:HttpGet("https://raw.githubusercontent.com/SCRIPTINGER/LIE1-HUB/refs/heads/main/Scripts/Hubs/Hub_3"))() 
-
-if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
-  print("Starting")
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/SCRIPTINGER/LIE1-HUB/refs/heads/main/Scripts/Hubs/Hub_1"))() 
-else
-  game:service('Players').LocalPlayer:Kick('Sorry guy Helor Hub Remastered now Alpha join in our discord for adding in whitelist')
-end
+local v0=loadstring(game:HttpGet("https://raw.githubusercontent.com/SCRIPTINGER/LIE1-HUB/refs/heads/main/Scripts/Hubs/Hub_3"))();if v0[game:service("Players").LocalPlayer.UserId] then local v1=0 -0 ;while true do if (v1==(0 -0)) then print("Starting");loadstring(game:HttpGet("https://raw.githubusercontent.com/SCRIPTINGER/LIE1-HUB/refs/heads/main/Scripts/Hubs/Hub_1"))();break;end end else game:service("Players").LocalPlayer:Kick("Sorry guy Helor Hub Remastered now Alpha join in our discord for adding in whitelist");end
