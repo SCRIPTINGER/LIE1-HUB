@@ -1,4 +1,4 @@
-local whitelistecheck = loadstring(game:HttpGet('https://raw.githubusercontent.com/SCRIPTINGER/LIE1-HUB/refs/heads/main/Data%20Base'))()
+local whitelistecheck = loadstring(game:HttpGet('https://raw.githubusercontent.com/SCRIPTINGER/LIE1-HUB/refs/heads/main/Data-Base'))()
 
 if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
   print('Starting')
