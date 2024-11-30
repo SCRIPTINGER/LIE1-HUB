@@ -1,1 +1,111 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "LIE1 HUB", HidePremium = true, SaveConfig = true, ConfigFolder = "CONFING"})
+OrionLib:MakeNotification({
+	Name = "Alert",
+	Content = "LIE1 Hub Remastered Helor hub(from one developer Helor Hub)",
+	Image = "rbxassetid://18994445145",
+	Time = 5
+})
+local Tab = Window:MakeTab({
+	Name = "INFO",
+	Icon = "rbxassetid://18994445145",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Admin Commands"
+})
+Tab:AddButton({
+	Name = "Infinity Yield",
+	Callback = function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/edgeiy/infiniteyield/master/source')))()
+  	end    
+})
+local Section = Tab:AddSection({
+	Name = "Functions"
+})
+Tab:AddSlider({
+	Name = "Walkspeed",
+	Min = 16,
+	Max = 670,
+	Default = 16,
+	Color = Color3.fromRGB(51,153,255),
+	Increment = 1,
+	ValueName = "Speed",
+	Callback = function(Value)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end    
+})
+Tab:AddSlider({
+	Name = "JumpPower",
+	Min = 5,
+	Max = 670,
+	Default = 5,
+	Color = Color3.fromRGB(51,153,255),
+	Increment = 1,
+	ValueName = "JumpPower",
+	Callback = function(Value)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end    
+})
 
+Tab:AddButton({
+	Name = "Tp tool",
+	Callback = function()
+      		mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "TP Tool"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+  	end    
+})
+LightingTab:AddToggle({
+    Name = "Full Bright",
+    Default = false,
+    Callback = function(Value)
+        if Value then
+            game:GetService("Lighting").Brightness = 2
+            game:GetService("Lighting").ClockTime = 14
+            game:GetService("Lighting").FogEnd = 100000
+            game:GetService("Lighting").GlobalShadows = false
+            game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+        else
+            game:GetService("Lighting").Brightness = 10
+            game:GetService("Lighting").ClockTime = 12
+            game:GetService("Lighting").FogEnd = 10000
+            game:GetService("Lighting").GlobalShadows = true
+            game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(127, 127, 127)
+        end
+    end
+})
+Tab:AddButton({
+	Name = "FullBright",
+	Callback = function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/SCRIPTINGER/LIE1-HUB/refs/heads/main/FullBright')))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Noclip",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SCRIPTINGER/HELOR-HUB/main/NOCLIP.lua?token=GHSAT0AAAAAACTZUFQAPNSZJ4KRRNP4XSSQZTS7IAQ"))()
+  	end   
+
+}) 
+Tab:AddButton({
+	Name = "Bypass(ONLY MOBILE)",
+	Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Pixeluted/adoniscries/main/Source.lua", true))()
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "",
+	Icon = "rbxassetid://18994445145",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Admin Commands"
+})
