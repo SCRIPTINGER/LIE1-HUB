@@ -2,4 +2,10 @@
    (Alpha 0.1.0) ~  WHITELIST
 
 ]]--
-loadstring("\112\114\105\110\116\40\34\32\89\79\85\82\32\83\67\82\73\80\84\32\72\69\82\69\33\33\32\34\41\10")()
+local whitelistecheck = loadstring(game:HttpGet("", true))()
+
+if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
+  
+else
+  game:service('Players').LocalPlayer:Kick('Sorry guy Helor Hub Remastered now Alpha join in our discord for adding in whitelist')
+end
