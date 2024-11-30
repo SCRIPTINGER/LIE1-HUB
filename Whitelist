@@ -1,4 +1,4 @@
-local whitelistecheck = local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local whitelistecheck = loadstring(game:HttpGet('https://raw.githubusercontent.com/SCRIPTINGER/LIE1-HUB/refs/heads/main/Data%20Base'))()
 
 if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
   print("yellow blue vase") -- Ваш скрипт
