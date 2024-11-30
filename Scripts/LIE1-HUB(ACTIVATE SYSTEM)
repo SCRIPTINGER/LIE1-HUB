@@ -63,7 +63,7 @@ end)
 tool.Parent = game.Players.LocalPlayer.Backpack
   	end    
 })
-LightingTab:AddToggle({
+Tab:AddToggle({
     Name = "Full Bright",
     Default = false,
     Callback = function(Value)
@@ -81,12 +81,6 @@ LightingTab:AddToggle({
             game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(127, 127, 127)
         end
     end
-})
-Tab:AddButton({
-	Name = "FullBright",
-	Callback = function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/SCRIPTINGER/LIE1-HUB/refs/heads/main/FullBright')))()
-  	end    
 })
 Tab:AddButton({
 	Name = "Noclip",
@@ -108,4 +102,17 @@ local Tab = Window:MakeTab({
 })
 local Section = Tab:AddSection({
 	Name = "Admin Commands"
+})
+local Tab = Window:MakeTab({
+Name = "Settings",
+Icon = "rbxassetid://137276252142963",
+PremiumOnly = false
+})
+
+Tab:AddColorpicker({
+      Name = "ColorHub",
+      Default = Color3.fromRGB(255, 0, 0),
+      Callback = function(Value)
+      
+      end    
 })
