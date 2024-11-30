@@ -1,7 +1,7 @@
 local whitelistecheck = loadstring(game:HttpGet('https://raw.githubusercontent.com/SCRIPTINGER/LIE1-HUB/refs/heads/main/Data-Base'))()
 
 if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
-  loadstring(game:HttpGet('https://raw.githubusercontent.com/SCRIPTINGER/LIE1-HUB/refs/heads/main/Scripts/LIE1-HUB(ACTIVATE%20SYSTEM)'))()
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/SCRIPTINGER/LIE1-HUB/refs/heads/main/Scripts/Hub'))()
 else
   game:service('Players').LocalPlayer:Kick('Kid')
 end
